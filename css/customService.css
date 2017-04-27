@@ -1,0 +1,63 @@
+#page-custom .layout{
+    min-width: 4.0rem;
+    max-width: 10.0rem; 
+    margin: 0 auto;
+    position: relative;
+}
+
+#page-custom .layout .converse .head-sculpture {
+	margin-top: 0.346667rem;
+	margin-left: 0.266667rem;
+	width: 0.8rem;
+	height: 0.8rem;
+	float: left;
+}
+
+#page-custom .layout .converse .converse-users {
+	position: relative;
+}
+
+#page-custom .layout .converse .converse-text {
+	padding: 0.253333rem 0.266667rem 0.133333rem 0.266667rem;
+	width: 5.866667rem;
+	min-height: 0.533333rem;
+	background-color: #fff;
+	float: left;
+	margin-top: 0.533333rem;
+	margin-left: 0.266667rem;
+	border-radius: 0.053333rem;
+}
+
+
+#page-custom .send-box {
+	width: 100%;
+	height: 1.066667rem;
+	border-top: 1px solid #dcdcdc;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 0.2rem 3.125%;
+}
+
+#page-custom .send-box .send-text {
+	font-size: 0.32rem;
+	color: #3e3e3e;
+	width: 79%;
+	height: 0.666667rem;
+	padding-left: 0.133333rem;
+	border: 1px solid #dcdcdc;
+	border-radius: 0.053333rem;
+	background-color: #fff;
+	float: left;
+}
+
+#page-custom .send-box .send-button {
+	width: 18%;
+	height: 0.666667rem;
+	font-size: 0.373333rem;
+	color: #fff;
+	border-radius: 0.053333rem;
+	float: left;
+	background-color: #F6432C;
+	margin-left: 2.1875%;
+}

@@ -1,0 +1,28 @@
+/*-- page-more --*/
+#page-more .sc-footer {
+	height: 1.066667rem;
+	border-top: 2px solid #dcdcdc;
+}
+#page-more .layout .sc-header {
+	height: 0.773333rem;
+	line-height: 0.773333rem;
+	background-color: #fff;
+}
+#page-more .layout .sc-header .icon_back {
+	position: absolute;
+	left: 0.266667rem;
+	top: 0;
+	right: auto;
+	bottom: 0;
+	margin: auto
+}
+#page-more .layout .container>div:first-child {
+	margin-top: 1.04rem;
+}
+#page-more .layout .container>div {
+	width: 100%;
+	margin-bottom: 0.266667rem;
+}
+#page-more .layout .container>div img {
+	width: 100%;
+}
