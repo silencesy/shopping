@@ -12,9 +12,9 @@
  	margin-top: 0.133333rem;
  	overflow: hidden;
  }
-#page-Done .layout .sec:nth-of-type(1) {
-	margin-top: 0.906667rem;
-}
+// #page-Done .layout .sec:nth-of-type(1) {
+// 	margin-top: 0.906667rem;
+// }
  #page-Done .contai {
  	position: absolute;
     left: 0;

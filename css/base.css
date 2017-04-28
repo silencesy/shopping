@@ -114,14 +114,14 @@ header {
 }
 
 // 底部
-footer {
-     position: fixed;
-    left: 0;
-    bottom: 0;
-}
+// footer {
+//     position: fixed;
+//     left: 0;
+//     bottom: 0;
+// }
 
 .sc-footer {
-    height: 2.133333rem;
+    // height: 2.133333rem;
     width: 100%;
     position: fixed;
     left: 0;
@@ -188,7 +188,7 @@ footer {
     height: 1.066667rem;
 }
 .footNav div {
-    width: 20%;
+    width: 25%;
     height: 1.066667rem;
     float: left;
 }
@@ -263,3 +263,11 @@ footer {
     margin-bottom: 0.2rem;
 
 }
+
+/*-----Cart页css开始-----*/
+
+/*-----Cart页css结束-----*/
+
+
+
+
