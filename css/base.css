@@ -208,7 +208,6 @@ header {
     padding-top: 0.133333rem;
 }
 
-
 .sc-footer .footNav .icon span {
     margin: 0.106667rem auto;
 }
@@ -264,6 +263,135 @@ header {
 /*-----Cart页css开始-----*/
 
 /*-----Cart页css结束-----*/
+
+
+/*-----首页css开始-----*/
+
+.layout{
+    min-width: 4.0rem;
+    max-width: 10.0rem; 
+    margin: 0 auto;
+    position: relative;
+    background-color: #eee;
+}
+
+.home-carousel {
+    width: 100%;
+    height: 5.266667rem;
+}
+
+.home-carousel .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.home-carousel .swiper-container .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.search_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 0.306667rem;
+    height: 0.306667rem;
+    background-position: -1.0rem 1.733333rem;
+}
+
+
+
+.home-sales {
+    width: 100%;
+    height: 4.0rem;
+    margin-top: 0.266667rem;
+    padding: 0.186667rem 0.266667rem 0 0.266667rem;
+    background-color: #fff;
+}
+
+.home-sales .sales-icon {
+    height: 0.44rem;
+}
+
+.home-sales .sales-icon img {
+    height: 0.44rem;
+}
+
+.sales-product {
+    margin-top: 0.186667rem;
+}
+
+.sales-product .sales-product-box {
+    width: 29%;
+    float: left;
+    margin-right: 0.613333rem;
+}
+
+.sales-product .sales-product-box:nth-child(3) {
+    margin-right: 0;
+}
+
+.sales-product  .sales-product-box .sales-product-img img {
+    height: 1.6rem;
+    width: 100%;
+}
+
+.sales-product .sales-product-text a{
+    display: inline-block;
+    padding-top: 0.16rem;
+    font-size: 0.32rem;
+    color: #898989;
+    text-align: center;
+}
+
+.sales-product .sales-product-price {
+    font-size: 0.266667rem;
+    color: #f6442b;
+    text-align: center;
+}
+
+.index-product-list {
+    width: 100%;
+    height: 6.68rem;
+    margin-top: 0.266667rem;
+    background-color: #fff;
+    padding: 0.266667rem;
+}
+
+.index-product-list .more-img {
+    position: relative;
+}
+
+.index-product-list .more-img img {
+    height: 3.12rem;
+    width: 100%;
+}
+
+.index-product-list .more-img .more-btn {
+    width: 1.226667rem;
+    height: 0.386667rem;
+    line-height: 0.386667rem;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 0.32rem;
+    font-family: Arial;
+    padding: 0 0.133333rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0.933333rem;
+    margin: auto;
+}
+
+.product-list-last {
+    margin-bottom: 1.333333rem;
+}
+
+/*-----首页css结束-----*/
 
 
 /*-- page-me --*/
@@ -354,29 +482,16 @@ header {
 /*-- page-me end --*/
 
 /*-- page-more --*/
-.sc-footer {
-    height: 1.066667rem;
-    border-top: 2px solid #dcdcdc;
-}
-.layout .sc-header {
-    height: 0.773333rem;
-    line-height: 0.773333rem;
-    background-color: #fff;
-}
-.layout .sc-header .icon_back {
-    position: absolute;
-    left: 0.266667rem;
-    top: 0;
-    right: auto;
-    bottom: 0;
-    margin: auto
-}
+
 .layout .container>div {
     width: 100%;
     margin-bottom: 0.266667rem;
 }
 .layout .container>div img {
     width: 100%;
+}
+.layout .container>div:last-child {
+    margin-bottom: 1.333333rem;
 }
 /*-- page-more end --*/
 
@@ -452,11 +567,8 @@ header {
 /*-- page-search  end --*/
 
 /*-- carEdit --*/
-.layout{
-    min-width: 4.0rem;
-    max-width: 10.0rem; 
-    margin: 0 auto;
-    position: relative;
+.section-list {
+    margin-bottom: 2.266667rem;
 }
 
 .sec {
@@ -524,22 +636,20 @@ header {
     float: right;
     color: #919191;
 }
+
+.cartedit-footer {
+    height: 2.133333rem;
+}
 /*-- carEdit end --*/
 
 /*-- cart --*/
-.layout{
-    min-width: 4.0rem;
-    max-width: 10.0rem; 
-    margin: 0 auto;
-    position: relative;
+.cartdone-footer {
+    height: 2.133333rem;
 }
-.sc-footer {
-    height: 1.066667rem;
-    border-top: 1px solid #DCDCDC;
-    border-bottom: 2px solid #EEEEEE;
-}
-.container {
+
+.cardone-list {
     position: relative;
+    margin-bottom: 2.266667rem;
 }
 
 .container .icon_BCart {
@@ -592,13 +702,6 @@ header {
 /*-- cart end --*/
 
 /*-- cartDone --*/
-.layout{
-    min-width: 4.0rem;
-    max-width: 10.0rem; 
-    margin: 0 auto;
-    position: relative;
-}
-
 .sec {
     position: relative;
     height: 2.4rem;
@@ -606,9 +709,7 @@ header {
     margin-top: 0.133333rem;
     overflow: hidden;
  }
-// #page-Done .layout .sec:nth-of-type(1) {
-//  margin-top: 0.906667rem;
-// }
+
 .contai {
     position: absolute;
     left: 0;
@@ -745,76 +846,15 @@ header {
 }
 /*-- cartDone end --*/
 
-/*-- customService --*/
-.layout{
-    min-width: 4.0rem;
-    max-width: 10.0rem; 
-    margin: 0 auto;
-    position: relative;
-}
-
-.layout .converse .head-sculpture {
-    margin-top: 0.346667rem;
-    margin-left: 0.266667rem;
-    width: 0.8rem;
-    height: 0.8rem;
-    float: left;
-}
-
-.layout .converse .converse-users {
-    position: relative;
-}
-
-.layout .converse .converse-text {
-    padding: 0.253333rem 0.266667rem 0.133333rem 0.266667rem;
-    width: 5.866667rem;
-    min-height: 0.533333rem;
-    background-color: #fff;
-    float: left;
-    margin-top: 0.533333rem;
-    margin-left: 0.266667rem;
-    border-radius: 0.053333rem;
-}
-
-
-.send-box {
-    width: 100%;
-    height: 1.066667rem;
-    border-top: 1px solid #dcdcdc;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 0.2rem 3.125%;
-}
-
-.send-box .send-text {
-    font-size: 0.32rem;
-    color: #3e3e3e;
-    width: 79%;
-    height: 0.666667rem;
-    padding-left: 0.133333rem;
-    border: 1px solid #dcdcdc;
-    border-radius: 0.053333rem;
-    background-color: #fff;
-    float: left;
-}
-
-.send-box .send-button {
-    width: 18%;
-    height: 0.666667rem;
-    font-size: 0.373333rem;
-    color: #fff;
-    border-radius: 0.053333rem;
-    float: left;
-    background-color: #F6432C;
-    margin-left: 2.1875%;
-}
-/*-- customService end --*/
-
 /*-- details --*/
+.details-img-box {
+    margin-bottom: 1.333333rem;
+}
+
 .details-img {
     width: 100%;
 }
+
 .bg {
     background-color: #fff;
 }
@@ -822,6 +862,13 @@ header {
     text-align: center;
     line-height: 1.066667rem;
 }
+
+.de-footer div a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
 .de-add {
     background-color: #f5b12a;
 }
