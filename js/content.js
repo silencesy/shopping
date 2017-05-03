@@ -27,9 +27,9 @@ $(function(){
 
     // 选择商品时按钮更换背景
 
-    // $(".icon_checkbox").click(function(){
-    //     $(this).toggleClass('icon_checkbox_active');
-    // });
+    $(".point-selected").click(function() {
+        $(this).toggleClass ("icon_right");         
+    });
 
     $('.delete').on("click",function(){
         $(this).parent().parent().slideUp();
