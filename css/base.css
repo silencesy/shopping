@@ -113,15 +113,7 @@ header {
     height: 0.36rem;
 }
 
-// 底部
-// footer {
-//     position: fixed;
-//     left: 0;
-//     bottom: 0;
-// }
-
 .sc-footer {
-    // height: 2.133333rem;
     width: 100%;
     position: fixed;
     left: 0;
@@ -170,7 +162,7 @@ header {
 
 .checkOutBtn {
     width: 2.266667rem;
-    height: 1.02rem;
+    height: 1.04rem;
     line-height: 1.02rem;
     display: inline-block;
     float: right;
@@ -643,16 +635,17 @@ header {
 /*-- carEdit end --*/
 
 /*-- cart --*/
-.cartdone-footer {
-    height: 2.133333rem;
+.layou-backcolor {
+    background-color: #fff;
 }
 
-.cardone-list {
+.emptycart {
     position: relative;
-    margin-bottom: 2.266667rem;
+    margin-top: 4.933333rem;
+    height: 2.4rem;
 }
 
-.container .icon_BCart {
+.emptycart .icon_empty_Cart {
     display: inline-block;
     width: 0.88rem;
     height: 0.866667rem;
@@ -665,14 +658,14 @@ header {
     margin: 0 auto;
 }
 
-.container .cart-text {
+.emptycart .cart-text {
     font-size: 0.32rem;
     color: #555353;
     text-align: center;
     padding-top: 1rem;
 }
 
-.container .star-shopping {
+.emptycart .star-shopping {
     width: 2.666667rem;
     height: 0.666667rem;
     font-size: 0.32rem;
@@ -688,17 +681,6 @@ header {
     margin: 0 auto;
 }
 
-// 下面图标
-.footNav .uesrCart .icon_Cart {
-    display: inline-block;
-    width: 0.466667rem;
-    height: 0.466667rem;
-    background-position: -0.506667rem -1.133333rem;
-}
-
-.sc-footer .footNav  .uesrCart .iconName {
-    color: #f6442b;
-}
 /*-- cart end --*/
 
 /*-- cartDone --*/
@@ -843,8 +825,16 @@ header {
     line-height: 2.4rem;
     color: #fff;
 }
+
+.cartdone-footer {
+    height: 2.133333rem;
+}
+
+.cardone-list {
+    margin-bottom: 2.266667rem;
+}
 /*-- cartDone end --*/
-<<<<<<< HEAD
+
 
 /*-- details --*/
 .details-img-box {
@@ -979,5 +969,3 @@ header {
 /*-- pay弹出框结束--*/
 
 /*-- details end --*/
-=======
->>>>>>> 65f91a68aa7fa372c043e7e18dad4a070bbcce08
