@@ -293,8 +293,6 @@ header {
     background-position: -1.0rem 1.733333rem;
 }
 
-
-
 .home-sales {
     width: 100%;
     height: 4.0rem;
@@ -475,9 +473,10 @@ header {
 
 /*-- page-more --*/
 
-.layout .container>div {
+.layout .container .demi {
     width: 100%;
     margin-bottom: 0.266667rem;
+    margin-top: 0.773333rem;
 }
 .layout .container>div img {
     width: 100%;
@@ -492,21 +491,14 @@ header {
     height: 1.066667rem;
     border-top: 1px solid #dcdcdc;
 }
-.layout header {
+.search header {
     height: 1.066667rem;
     padding: 0;
     position: relative;
 }
-.layout header .icon_back {
-    position: absolute;
-    left: 0.266667rem;
-    top: 0;
-    right: auto;
-    bottom: 0;
-    margin: auto
-}
-.layout header .sc-input input {
-    width: 85%;
+
+.search header .sc-input input {
+    width: 96%;
     height: 0.8rem;
     background-color: #eeeeee;
     margin-top: 0.133333rem;
@@ -514,7 +506,7 @@ header {
     padding-left: 0.4rem;
     border-radius: 20px;    
 }
-.layout header .sc-input .icon_search{
+.search header .sc-input .icon_search{
     border: 0 none;
     outline:none;
     position: absolute;
@@ -525,25 +517,26 @@ header {
     height: 0.306667rem;
     background-position: -1.146667rem 0;
 }
-.layout header .sc-input {
+.search header .sc-input {
     position: relative;
+    margin-left: 1.266667rem;
 }
 
-.container {
+.search-container {
     padding: 0;
     font-size: 0.266667rem;
 }
-.container .search-history {
+.search-container .search-history {
     margin-top: 0.266667rem;    
 }
-.container p {
+.search-container p {
     color: #9f9e9e;
 }
-.container div div {
+.search-container div div {
     overflow: hidden;
     text-align: center;
 }
-.container div li{
+.search-container div li{
     font-size: 0.32rem;
     color: #757272;
     float: left;
@@ -553,7 +546,7 @@ header {
     margin-right: 0.266667rem;
     margin-top: 0.266667rem;
 }
-.container .search-history {
+.search-container .search-history {
     margin-bottom: 0.8rem;
 }
 /*-- page-search  end --*/
@@ -834,7 +827,6 @@ header {
     margin-bottom: 2.266667rem;
 }
 /*-- cartDone end --*/
-
 
 /*-- details --*/
 .details-img-box {
