@@ -6,11 +6,11 @@
 	<title>search</title>
 	<link rel="stylesheet" href="css/base.css">
 </head>
-<body>
+<body class="bo-search">
 	<!-- 主体部分 -->
 	<div class="layout search">
-		<header class="sc-header">
-			<a class="head-backbox" href="#">
+		<header class="search-header">
+			<a class="search-backbox" href="#">
 				<span class="icon_back"></span>
 			</a>
 			<div class="sc-input">
@@ -21,6 +21,7 @@
 			</div>
 		</header>
 		<div class="container search-container">
+			<img src="images/del.png" alt="" class="del">
 			<div class="search-history">
 				<p>Search History</p>
 				<span icon_del></span>
@@ -46,32 +47,38 @@
 		</div>
 		<footer class="sc-footer">
 			<div class="footNav">
-					<div>					
-							<a href="#" class="icon">
-								<span class="icon_Home"></span>
-								<p>Home</p>
-							</a>				
-					</div>
-					<div>
-							<a href="#"  class="icon">
-								<span class="icon_Cart"></span>
-								<p>Cart</p>
-							</a>
-					</div>
-					<div>
-							<a href="#" class="icon">
-								<span class="icon_Me"></span>
-								<p>Me</p>
-							</a>
-					</div>
-					<div>
-							<a href="#" class="icon">
-								<span class="icon_More"></span>
-								<p>More</p>
-							</a>			
-					</div>
+				<div>					
+					<a href="#" class="icon">
+						<span class="icon_Home"></span>
+						<p>Home</p>
+					</a>				
+				</div>
+				<div>
+					<a href="#"  class="icon">
+						<span class="icon_Cart"></span>
+						<p>Cart</p>
+					</a>
+				</div>
+				<div>
+					<a href="#" class="icon">
+						<span class="icon_Me"></span>
+						<p>Me</p>
+					</a>
+				</div>
+				<div>
+					<a href="#" class="icon">
+						<span class="icon_More"></span>
+						<p>More</p>
+					</a>			
+				</div>
 			</div>
 		</footer>
 	</div>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(".del").click(function() {
+            $(".history-txt").css("display","none")       
+		});
+	</script>
 </body>
 </html>
