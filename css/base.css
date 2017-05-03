@@ -571,8 +571,8 @@ header {
 
 .icon_checkbox {
     display: inline-block;
-    width: 0.453333rem;
-    height: 0.453333rem;
+    width: 0.46rem;
+    height: 0.454rem;
     background-position: -0.68rem 0;
 }
 
@@ -700,14 +700,9 @@ header {
     float: left;
     padding: 0.973333rem 0 0 0.266667rem;
 }
-.icon_checkbox {
-    display: inline-block;
-    width: 0.453333rem;
-    height: 0.453333rem;
-    background-position: -0.68rem 0;
-}
+
 .icon_right {
-    width: 0.453333rem;
+    width: 0.46rem;
     height: 0.453333rem;
     background-position: -0.213333rem 0;
 }
