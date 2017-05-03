@@ -8,7 +8,7 @@
 </head>
 <body class="bg">
 	<!-- 主体部分 -->
-	<div class="layout">
+	<div class="details">
 		<header class="sc-header">
 			<a class="head-backbox" href="#">
 				<span class="icon_back"></span>
@@ -42,6 +42,60 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- pay弹出框开始 -->
+		<div class="de-box">
+			<div class="pay">
+				<div class="de-goods">
+					<div class="f_left de-goods-img">
+						<a href="">
+							<img src="images/chi.png" alt="">
+						</a>
+					</div>
+					<div class="f_left de-goods-price">
+						<p>￥ 23.00</p>
+						<span>Stock 50(items)</span>
+					</div>
+					<div class="f_right de-over">		
+						<img src="images/over.png" alt="">
+					</div>
+				</div>
+				<div class="de-type">
+					<p>Type</p>
+					<div>
+						<a href="#">
+							<span>Chiid Ticket</span>
+						</a>
+						<a href="#">
+							<span>Adult Ticket</span>
+						</a>
+					</div>		
+				</div>
+				<div class="de-quantity">
+					<span class="f_left">Quantity</span>
+					<div class="producutNum f_right">
+						<span class="sub">-</span>
+						<input class="numer" type="number" value="1">
+						<span class="add">+</span>
+					</div>
+				</div>
+				<div class="de-done">
+					<a href="#">Done</a>
+				</div>
+			</div>
+		</div>
+		<!-- pay弹出框结束 -->
+
 	</div>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/cartDone.js"></script>
+	<script>
+		$(".de-over").click(function() {
+            $(".de-box").css("display","none")       
+		});
+		$(".de-pay").click(function() {
+            $(".de-box").css("display","block");     
+		});
+	</script>
 </body>
 </html>
