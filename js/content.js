@@ -13,7 +13,6 @@ $(function(){
 		$(this).next().val(num);
 	});
 	// 点击增加商品数量
-    // 
 	$(".add").click(function(){
             $(this).prev().prev().css("color","#000");
 			var n=$(this).prev().val();
@@ -24,13 +23,24 @@ $(function(){
 			$(this).prev().val(num);
 	});
 
+    // 点击全选和全不选
+    console.log($('#checkedAll'));
+    // if ($("[name='checkbox']").attr("checked")==true) {
+    //     $("[name='checkbox']").addClass('icon_right');
+    // }
+    
+
+    // $(".sec input[type='checkbox']:checked")
+    $('.delete-checked').click(function(event) {
+        $(".sec input[type='checkbox']:checked").parents('.sec').slideUp();
+    });
 
     // 选择商品时按钮更换背景
-
     $(".point-selected").click(function() {
         $(this).toggleClass ("icon_right");         
     });
 
+    // 点击删除商品
     $('.delete').on("click",function(){
         $(this).parent().parent().slideUp();
     });
