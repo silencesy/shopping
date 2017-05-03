@@ -63,12 +63,8 @@
 				<div class="de-type">
 					<p>Type</p>
 					<div>
-						<a href="#">
-							<span>Chiid Ticket</span>
-						</a>
-						<a href="#">
-							<span>Adult Ticket</span>
-						</a>
+						<button class="de-ticket de-active">Child Ticket</button>
+						<button class="de-ticket">Adult Ticket</button>
 					</div>		
 				</div>
 				<div class="de-quantity">
@@ -88,13 +84,19 @@
 
 	</div>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="js/cartDone.js"></script>
+	<script src="js/content.js"></script>
 	<script>
-		$(".de-over").click(function() {
-            $(".de-box").css("display","none")       
-		});
-		$(".de-pay").click(function() {
-            $(".de-box").css("display","block");     
+		$(function(){
+			$(".de-over").click(function() {
+	            $(".de-box").css("display","none")       
+			});
+			$(".de-pay").click(function() {
+	            $(".de-box").css("display","block");     
+			});
+			$(".de-ticket").click(function(){
+				$(this).siblings().removeClass("de-active");
+				$(this).addClass("de-active");
+			});
 		});
 	</script>
 </body>

@@ -836,9 +836,6 @@ header {
 /*-- cartDone end --*/
 
 /*-- details --*/
-.details-img-box {
-    margin-bottom: 1.333333rem;
-}
 .details {
     height: 100%;
 }
@@ -878,8 +875,14 @@ header {
 .de-ear {
     border-right: 1px solid #ddd;
 }
-
+.de-ear img ,.de-heart img {
+    vertical-align: middle;
+}
 /*-- pay弹出框开始--*/
+.de-type div .de-active {
+    background-color: #f6432c;
+    color: #fff;
+}
 .de-goods {
     padding: 0.266667rem 0;
     margin: 0 0.266667rem;
@@ -912,13 +915,15 @@ header {
     font-size: 0.32rem;
     color: #3e3e3e;
 }
-.de-type div span {
+.de-type div button {
     font-size: 0.32rem;
     color: #3e3e3e;
     padding: 0.133333rem 0.2rem;
     margin-right: 0.4rem;
     background-color: #f2f2f2;
     border-radius: 5px;
+    outline: none;
+    border: none;
 }
 .de-quantity {
     padding: 0.586667rem 0;
