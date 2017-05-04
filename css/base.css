@@ -67,6 +67,14 @@ input,textarea{
     background-size: 4.973333rem 2.586667rem;
 }
 
+.show {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
 // 头部
 header {
     background-color: #fff;
@@ -91,9 +99,12 @@ header {
 }
 .head-Edit {
     float: right;
+    height: 0.8rem;
+    width: 1.333333rem;
     font-size: 0.373333rem;
     color: #919191;
     cursor: pointer;
+    margin-right: -20px;
 }
 
 .head-backbox {
@@ -565,6 +576,7 @@ header {
 
 /*-- carEdit --*/
 .section-list {
+    margin-top: 0.866667rem;
     margin-bottom: 2.266667rem;
 }
 
@@ -583,8 +595,9 @@ header {
 
 .icon_checkbox {
     display: inline-block;
-    width: 0.46rem;
-    height: 0.454rem;
+    width: 0.47rem;
+    height: 0.47rem;
+    border-radius: 50%;
     background-position: -0.68rem 0;
 }
 
@@ -714,8 +727,9 @@ header {
 }
 
 .icon_right {
-    width: 0.46rem;
-    height: 0.453333rem;
+    width: 0.455rem;
+    height: 0.455rem;
+    border-radius: 50%;
     background-position: -0.213333rem 0;
 }
 
@@ -754,7 +768,7 @@ header {
 }
 
 .sec .productInfo-box {
-    padding: 0 0.32rem;
+    padding: 0 0.32rem 0 0;
     height: 0.533333rem;
     line-height: 0.533333rem;
 }
@@ -796,6 +810,7 @@ header {
     float: left;
     color: #000;
     text-align: center;
+    border-radius: 0;
 }
 
 .producutNum .add {
@@ -831,6 +846,7 @@ header {
 }
 
 .cardone-list {
+    margin-top: 0.866667rem;
     margin-bottom: 2.266667rem;
 }
 /*-- cartDone end --*/

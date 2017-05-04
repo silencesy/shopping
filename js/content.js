@@ -1,4 +1,6 @@
 $(function(){
+
+    input_value();
 	// 点击减商品数量
 	$(".sub").click(function(){
 		var n=$(this).next().val();
@@ -29,7 +31,6 @@ $(function(){
             $(this).prop("checked", all);
         });
         addstyle();
-
     });
 
     // 设置统一样式
@@ -51,6 +52,7 @@ $(function(){
     
     $('.delete-checked').click(function(event) {
         $(".sec input[type='checkbox']:checked").parents('.sec').remove();
+        cartIsEmpty();
     });
 
     // 选择商品时按钮更换背景
@@ -77,12 +79,51 @@ $(function(){
         }       
     }
 
+    // 购物车是否为空
+    function cartIsEmpty () {
+        if ($('.sec').length===0) {
+            location.href="http://www.baidu.com";//跳到空的购物车页面
+        }
+    }
 
 
+    // 默认输入的值
+    function input_value() {
+        $('.productInfo-mumber').each(function(){
+            $(this).parents('.sec').find('.numer').val($(this).text());
+        })
+    }
+
+    // 购物车点击切换编辑
+    $('.head-Edit-btn').click(function(){
+        $(this).addClass('hide');
+        $('.priceinfo').addClass('hide');
+        $('.productInfo-box').addClass('hide');
+        $('.producutNum').removeClass('hide');
+        $('.head-done').removeClass('hide');
+        $('.delete-checked').show();
+        $('.topay-checked').hide();
+    });
+    $('.head-done').click(function(){
+        $(this).addClass('hide');
+        $('.priceinfo').removeClass('hide');
+        $('.productInfo-box').removeClass('hide');
+        $('.producutNum').addClass('hide');
+        $('.head-Edit-btn').removeClass('hide');
+        $('.numer').parents('.sec').find('.productInfo-mumber').text();
+        $('.delete-checked').hide();
+        $('.topay-checked').show();
+        $('.numer').each(function(index, el) {
+            $(this).parents('.sec').find('.productInfo-mumber').text($(this).val());
+        });
+        totl();             
+    });    
 
     // 点击删除商品
     $('.delete').on("click",function(){
         $(this).parent().parent().remove();
+        totl();
+        cartIsEmpty ();
     });
 
     // 合计
