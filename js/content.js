@@ -1,5 +1,4 @@
 $(function(){
-
 	// 点击减商品数量
 	$(".sub").click(function(){
 		var n=$(this).next().val();
@@ -24,26 +23,100 @@ $(function(){
 	});
 
     // 点击全选和全不选
-    console.log($('#checkedAll'));
-    // if ($("[name='checkbox']").attr("checked")==true) {
-    //     $("[name='checkbox']").addClass('icon_right');
-    // }
+    $("#checkedAll").click(function() {
+        all = $(this).prop("checked");
+        $(".icon_checkbox").each(function() {
+            $(this).prop("checked", all);
+        });
+        addstyle();
+
+    });
+
+    // 设置统一样式
+    function addstyle() {
+        $(".sec .point-selected").each(function() {
+            if ($(this).prop("checked")==true) {
+                $(this).addClass('icon_right');
+
+            } else {
+               $(this).removeClass('icon_right');
+               if ($("#checkedAll").prop("checked")==true) {
+                $("#checkedAll").prop("checked","false");
+               }
+            }
+        })
+    };   
     
 
-    // $(".sec input[type='checkbox']:checked")
+    
     $('.delete-checked').click(function(event) {
-        $(".sec input[type='checkbox']:checked").parents('.sec').slideUp();
+        $(".sec input[type='checkbox']:checked").parents('.sec').remove();
     });
 
     // 选择商品时按钮更换背景
     $(".point-selected").click(function() {
-        $(this).toggleClass ("icon_right");         
+        $(this).toggleClass("icon_right");
+        allLight();
+        totl();
     });
+
+    // 当所有都选中时all亮起
+    function allLight() {
+        var i = 0;
+        $(".sec .point-selected").each(function() {
+            if ($(this).prop("checked")==true) {
+                i++;
+            }
+        })
+        if(i==$(".sec .point-selected").length){
+            $('#checkedAll').addClass('icon_right');
+            $("#checkedAll").prop("checked","true");
+        } else {
+            $('#checkedAll').removeClass('icon_right');
+            $("#checkedAll").prop("checked","");
+        }       
+    }
+
+
+
 
     // 点击删除商品
     $('.delete').on("click",function(){
-        $(this).parent().parent().slideUp();
+        $(this).parent().parent().remove();
     });
+
+    // 合计
+    function totl() {
+        var sum = 0;
+       $(".sec input[type='checkbox']:checked").each(function(){
+            sum += parseInt($(this)
+                .parents('.sec')
+                .find('.productInfo-pri-number')
+                .text()) * parseInt($(this)
+                .parents('.sec')
+                .find('.productInfo-mumber')
+                .text());
+       });
+       $('.priceAll-number').text(sum);
+
+    }    
+
+
+    // tap事件封装
+    $(document).on("touchstart", function(e) {
+    if(!$(e.target).hasClass("disable")) $(e.target).data("isMoved", 0);
+    });
+    $(document).on("touchmove", function(e) {
+        if(!$(e.target).hasClass("disable")) $(e.target).data("isMoved", 1);
+    });
+    $(document).on("touchend", function(e) {
+        if(!$(e.target).hasClass("disable") && $(e.target).data("isMoved") == 0) $(e.target).trigger("tap");
+    });
+
+
+
+
+
 
 
 	// 左滑删除
