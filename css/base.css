@@ -408,7 +408,7 @@ header {
 }
 .container .demi .demi-left {
     position: relative;
-    width: 31%;
+    width: 37%;
     height: 3.08rem;
 }
 .container .demi .demi-left img {
@@ -485,13 +485,13 @@ header {
 /*-- page-more --*/
 .container-more div img {
     width: 100%;
-    margin-bottom: 0.266667rem;
+    margin-bottom: 0.133333rem;
 }
 .container-more div:nth-of-type(1) img {
     margin-top: 0.266667rem;
 }
 .container-more>div:last-child {
-    margin-bottom: 1.333333rem;
+    margin-bottom: 0.933333rem;
 }
 /*-- page-more end --*/
 
