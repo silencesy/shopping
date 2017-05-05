@@ -44,7 +44,7 @@ window.mobileUtil = (function(win, doc) {
 
             if ( !metaEl ) { // REM
                 var docEl = doc.documentElement,
-                    maxwidth = docEl.dataset.mw || 750, // 每 dpr 最大页面宽度
+                    maxwidth = docEl.dataset.mw || 650, // 每 dpr 最大页面宽度
                     dpr = isIos ? Math.min(win.devicePixelRatio, 3) : 1,
                     scale = 1 / dpr,
                     tid;
@@ -61,7 +61,7 @@ window.mobileUtil = (function(win, doc) {
                     if (width / dpr > maxwidth) {
                         width = maxwidth * dpr;
                     }
-                    var rem = width / 10;
+                    var rem = width / 8.5;
                     docEl.style.fontSize = rem + 'px';
                 };
 
@@ -113,6 +113,9 @@ window.mobileUtil = (function(win, doc) {
 			});
 			return data;
 		}
+
+
+
 	};
 })(window, document);
 
