@@ -88,23 +88,23 @@
 	<script>
 		$(function(){
 			$(".de-over").click(function() {
-	      $(".de-box").css("display","none");       
+	      		$(".de-box").css("display","none");       
+			});
+			$(".de-add").click(function(){
+				$(".de-box").css("display","block");
+				$(".de-done").attr({
+					"data_number": "1"
+				});
 			});
 			$(".de-pay").click(function() {
-        $(".de-box").css("display","block");
-				$('.de-done').attr({
-					"data_number": '2'
+        		$(".de-box").css("display","block");
+				$(".de-done").attr({
+					"data_number": "2"
 				});	                 
 			});
 			$(".de-ticket").click(function(){
 				$(this).siblings().removeClass("de-active");
 				$(this).addClass("de-active");							
-			});
-			$(".de-add").click(function(){
-				$(".de-box").css("display","block");
-				$('.de-done').attr({
-					"data_number": '1'
-				});
 			});
 		});
 	</script>
