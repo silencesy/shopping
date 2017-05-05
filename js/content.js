@@ -1,5 +1,5 @@
 $(function(){
-
+    new FastClick(document.body);
     input_value();
 	// 点击减商品数量
 	$(".sub").click(function(){

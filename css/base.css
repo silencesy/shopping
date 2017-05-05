@@ -269,6 +269,7 @@ header {
 /*-----首页css开始-----*/
 
 .layout{
+    
     min-width: 4.0rem;
     max-width: 10.0rem; 
     margin: 0 auto;
@@ -325,7 +326,7 @@ header {
 .sales-product .sales-product-box {
     width: 29%;
     float: left;
-    margin-right: 0.613333rem;
+    margin-right: 0.51rem;
 }
 
 .sales-product .sales-product-box:nth-child(3) {
