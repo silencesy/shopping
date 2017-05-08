@@ -1,6 +1,55 @@
 $(function(){
     new FastClick(document.body);
     input_value();
+
+
+    // 左滑删除
+    var container = document.querySelectorAll('.contai');
+
+    for(var i=0; i<container.length; i++) {
+        
+        var x, y, X, Y, swipeX, swipeY;
+        
+        container[i].addEventListener('touchstart', function (event) {
+            x = event.changedTouches[0].pageX;
+            y = event.changedTouches[0].pageY;
+            swipeX = true;
+            swipeY = true ;
+        });
+
+        container[i].addEventListener('touchmove', function (event) {
+
+            X = event.changedTouches[0].pageX;
+            Y = event.changedTouches[0].pageY;
+            
+            // 左右滑动
+            if(swipeX && Math.abs(X-x) - Math.abs(Y-y) > 0) {
+
+                // 阻止事件冒泡
+                event.stopPropagation();
+
+                if(X - x > 10) {
+                    event.preventDefault();
+                    this.style.left = '0px';
+                }
+                if(x - X > 10) {
+                    event.preventDefault();
+                    this.style.left = '-1.333333rem';
+                }
+                swipeY = false;
+            }
+
+            // 上下滑动
+            if(swipeY && Math.abs(X-x) - Math.abs(Y-y) < 0) {
+                swipeX = false;
+            }
+            
+        });
+
+    }
+
+
+
 	// 点击减商品数量
 	$(".sub").click(function(){
 		var n=$(this).next().val();
@@ -61,6 +110,18 @@ $(function(){
         allLight();
         totl();
     });
+    // $(".checkProduct").click(function() {
+    //     $(this).find('.point-selected').toggleClass("icon_right");
+    //     $(this).find('.point-selected').change(function () {
+    //         if($(this).is(':checked')){
+    //             $(this).attr("checked",''); 
+    //         }else{
+    //             $(this).attr("checked",'true'); 
+    //         }
+    //     });
+    //     allLight();
+    //     totl();
+    // });    
 
     // 当所有都选中时all亮起
     function allLight() {
@@ -116,7 +177,10 @@ $(function(){
         $('.numer').each(function(index, el) {
             $(this).parents('.sec').find('.productInfo-mumber').text($(this).val());
         });
-        totl();             
+        totl();
+        $('.contai').each(function(){
+            this.style.left = '0px';
+        })            
     });    
 
     // 点击删除商品
@@ -160,49 +224,6 @@ $(function(){
 
 
 
-	// 左滑删除
-    var container = document.querySelectorAll('.contai');
 
-    for(var i=0; i<container.length; i++) {
-        
-        var x, y, X, Y, swipeX, swipeY;
-        
-        container[i].addEventListener('touchstart', function (event) {
-            x = event.changedTouches[0].pageX;
-            y = event.changedTouches[0].pageY;
-            swipeX = true;
-            swipeY = true ;
-        });
-
-        container[i].addEventListener('touchmove', function (event) {
-
-            X = event.changedTouches[0].pageX;
-            Y = event.changedTouches[0].pageY;
-            
-            // 左右滑动
-            if(swipeX && Math.abs(X-x) - Math.abs(Y-y) > 0) {
-
-                // 阻止事件冒泡
-                event.stopPropagation();
-
-                if(X - x > 10) {
-                    event.preventDefault();
-                    this.style.left = '0px';
-                }
-                if(x - X > 10) {
-                    event.preventDefault();
-                    this.style.left = '-1.333333rem';
-                }
-                swipeY = false;
-            }
-
-            // 上下滑动
-            if(swipeY && Math.abs(X-x) - Math.abs(Y-y) < 0) {
-                swipeX = false;
-            }
-            
-        });
-
-    }
     
 });
