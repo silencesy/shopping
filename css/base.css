@@ -1082,3 +1082,31 @@ header {
     margin-right: 0;
 }
 /*-- orders end --*/
+
+/*-- address --*/
+.address-container {
+    margin-top: 0.933333rem;
+}
+.address-content {
+    background-color: #fff;
+    padding: 0.266667rem;
+}
+.address-info {
+    border-bottom: 1px solid #ddd;
+}
+.address-info p {
+    margin-bottom: 0.093333rem;
+    font-size: 0.32rem;
+}
+.address-info span {
+    display: inline-block;
+    margin-bottom: 0.2rem;
+    font-size: 0.32rem;
+}
+
+
+
+
+
+
+/*-- address end --*/
