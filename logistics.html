@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="js/fixScreen.js"></script>
+	<title>logistics</title>
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	<div class="layout">
+		<!-- 头部开始 -->
+		<header class="sc-header">
+			<a class="head-backbox" href="#">
+				<span class="icon_back"></span>
+			</a>
+			<div class="title-text">Package Tracking</div>
+		</header>
+		<!-- 头部结束 -->
+		<!-- 物流跟踪头部开始 -->
+		<div class="package-tracking-title">
+			<p>Package tracking:item was delivered and signed by customer.</p>
+			<p>Your item(s) is (are) being sent by S.F.Express Logis-tics.</p>
+		</div>	
+		<!-- 物流跟踪头部结束 -->
+		<!-- 物流详情开始 -->
+		<div class="Logistics-details">
+			<ul class="Logistics-details-ul">
+				<li>
+					<p>[上海市]快件已被签收，期待再次为你服务</p>
+					<p>2017-03-03 11:04:50</p>
+				</li>
+				<li>
+					<p>[上海市]快件已被签收，期待再次为你服务</p>
+					<p>2017-03-03 11:04:50</p>
+				<li>
+					<p>[上海市]快件已被签收，期待再次为你服务</p>
+					<p>2017-03-03 11:04:50</p>
+				</li>								
+			</ul>
+		</div>
+		<!-- 物流详情结束 -->
+		<!-- 底部开始 -->
+		<footer class="sc-footer">
+				<div class="footNav">
+						<div>					
+								<a href="#" class="icon">
+									<span class="icon_Home"></span>
+									<p>Home</p>
+								</a>				
+						</div>
+						<div>
+								<a href="#"  class="icon">
+									<span class="icon_Cart"></span>
+									<p>Cart</p>
+								</a>
+						</div>
+						<div>
+								<a href="#" class="icon">
+									<span class="icon_Me"></span>
+									<p>Me</p>
+								</a>
+						</div>
+						<div>
+								<a href="#" class="icon">
+									<span class="icon_More"></span>
+									<p>More</p>
+								</a>			
+						</div>
+				</div>
+		</footer>		
+		<!-- 底部结束 -->
+	</div>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$.ajax({
+				url: 'http://v.juhe.cn/exp/index',
+				type: 'get',
+				data: {"key": 'b5cf42779bbf6c6563f4651e1ed80267',"com":"yd","no":"3967430193953"},
+				function(data){
+					console.log(data);
+				}
+			})		
+		});
+	</script>
+</body>
+</html>

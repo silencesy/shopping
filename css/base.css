@@ -408,7 +408,7 @@ header {
 }
 .container .demi .demi-left {
     position: relative;
-    width: 37%;
+    width: 31%;
     height: 3.08rem;
 }
 .container .demi .demi-left img {
@@ -485,13 +485,13 @@ header {
 /*-- page-more --*/
 .container-more div img {
     width: 100%;
-    margin-bottom: 0.133333rem;
+    margin-bottom: 0.266667rem;
 }
 .container-more div:nth-of-type(1) img {
     margin-top: 0.266667rem;
 }
 .container-more>div:last-child {
-    margin-bottom: 0.933333rem;
+    margin-bottom: 1.333333rem;
 }
 /*-- page-more end --*/
 
@@ -685,8 +685,8 @@ header {
 /*-- carEdit end --*/
 
 /*-- cart --*/
-.layou-backcolor {
-    background-color: #fff;
+.cart-body-color {
+    background-color: #E8E8E8;
 }
 
 .emptycart {
@@ -756,7 +756,7 @@ header {
     width: 10%;
     height: 100%;
     float: left;
-    padding: 0.973333rem 0.266667rem;
+    padding: 0.973333rem 0.133333rem 0.866667rem 0.266667rem;
 }
 
 .icon_right {
@@ -780,7 +780,7 @@ header {
 }
 
 .sec .porductpic {
-    width: 2.48rem;
+    width: 2.4rem;
     height: 1.6rem;
 }
 
@@ -824,8 +824,8 @@ header {
 }
 
 .producutNum .sub {
-    width: 0.56rem;
-    height: 0.586667rem;
+    width: 0.6rem;
+    height: 0.6rem;
     line-height: 0.586667rem;
     cursor: pointer;
     border: 1px solid #BFBEBE;
@@ -834,8 +834,8 @@ header {
 }
 
 .producutNum .numer {
-    width: 0.853333rem;
-    height: 0.586667rem;
+    width: 0.88rem;
+    height: 0.6rem;
     line-height: 0.586667rem;
     font-size: 0.32rem;
     padding-left: 0.08rem;
@@ -847,8 +847,8 @@ header {
 }
 
 .producutNum .add {
-    width: 0.56rem;
-    height: 0.586667rem;
+    width: 0.6rem;
+    height: 0.6rem;
     line-height: 0.586667rem;
     cursor: pointer;
     border: 1px solid #BFBEBE;
@@ -1021,6 +1021,68 @@ header {
 
 /*-- pay弹出框结束--*/
 
+<<<<<<< HEAD
+/*-- details end --*/
+
+/*logistics页开始*/ 
+.package-tracking-title {
+    margin-top: 1.066667rem;
+    background-color: #fff;
+}
+
+.package-tracking-title p {
+    padding: 0.266667rem;
+    font-size: 0.32rem;
+}
+
+.package-tracking-title p:last-child {
+    padding-top: 0;
+}
+
+.Logistics-details {
+    background-color: #fff;
+    margin-top: 0.266667rem;
+}
+
+.Logistics-details .Logistics-details-ul li{
+    border-left: 2px solid #ccc;
+    margin-left: 0.333333rem;
+    font-size: 0.32rem;
+    padding: 0.266667rem 0.133333rem 0 0.466667rem;
+    position: relative;
+}
+
+.Logistics-details .Logistics-details-ul li::before {
+    content: '';
+    display: inline-block;
+    width: 0.266667rem;
+    height: 0.266667rem;
+    position: absolute;
+    left: -0.16rem;
+    top: 0.4rem;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.Logistics-details .Logistics-details-ul li:first-child {
+    color: #f6442b;
+}
+
+.Logistics-details .Logistics-details-ul li:first-child::before {
+    background-color: #f6442b;
+}
+
+.Logistics-details .Logistics-details-ul li p:nth-child(2) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.266667rem;
+}
+
+.Logistics-details .Logistics-details-ul li p {
+    line-height: 0.5rem;
+}
+
+/*logistics页结束*/ 
+
 /*-------------------- details end ------------------*/
 
 /*-- No address --*/
@@ -1082,6 +1144,7 @@ header {
     margin-right: 0;
 }
 /*-- orders end --*/
+<<<<<<< HEAD
 
 /*-- address --*/
 .address-container {
@@ -1110,3 +1173,5 @@ header {
 
 
 /*-- address end --*/
+=======
+>>>>>>> 0b99682654f24fd2d02e73fdaf8146bdc5c49aa6
