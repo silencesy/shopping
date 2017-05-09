@@ -97,6 +97,11 @@ header {
     height: 0.773333rem;
     line-height: 0.773333rem;
 }
+
+.title-text-title {
+    margin: 0 auto;
+}
+
 .head-Edit {
     float: right;
     height: 0.8rem;
