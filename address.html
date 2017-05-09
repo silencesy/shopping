@@ -14,7 +14,8 @@
 			</a>
 			<div class="title-text">Address</div>
 		</header>
-		<div class="address-container">		
+		<div class="address-container">
+			<!-- address-content start -->
 			<div class="address-content">
 				<div class="address-info">
 					<p>Amanda</p>
@@ -23,19 +24,107 @@
 				</div>
 				<div class="address-set clearfix">
 					<div class="f_left">
-						Default address
+						<div class="address-del">
+							<span class="icon_checkbox address-circle"></span>
+							<span class="address-defau">Default address</span>
+						</div>						
 					</div>
-					<div class="f_right">
-						<img src="images/del.png" alt="" class="">
+					<div class="f_right">						
+						<a href=""><img src="" alt=""> Edit </a>
+						<img src="images/del.png" alt="" class="Delete"> Delete
 					</div>
-
-
 				</div>
 			</div>
+			<!-- address-content end -->
+			<!-- address-content start -->
+			<div class="address-content">
+				<div class="address-info">
+					<p>Amanda</p>
+					<p>1365374988</p>
+					<span>Room 305-306,Building 2,No.169 MengZi Rode,Shanghai</span>
+				</div>
+				<div class="address-set clearfix">
+					<div class="f_left">
+						<div class="address-del">
+							<span class="icon_checkbox address-circle"></span>
+							<span class="address-defau">Default address</span>
+						</div>						
+					</div>
+					<div class="f_right">						
+						<a href=""><img src="" alt=""> Edit </a>
+						<img src="images/del.png" alt="" class="Delete"> Delete
+					</div>
+				</div>
+			</div>
+			<!-- address-content end -->
+			<!-- address-content start -->
+			<div class="address-content">
+				<div class="address-info">
+					<p>Amanda</p>
+					<p>1365374988</p>
+					<span>Room 305-306,Building 2,No.169 MengZi Rode,Shanghai</span>
+				</div>
+				<div class="address-set clearfix">
+					<div class="f_left">
+						<div class="address-del">
+							<span class="icon_checkbox address-circle"></span>
+							<span class="address-defau">Default address</span>
+						</div>						
+					</div>
+					<div class="f_right">						
+						<a href=""><img src="" alt=""> Edit </a>
+						<img src="images/del.png" alt="" class="Delete"> Delete
+					</div>
+				</div>
+			</div>
+			<!-- address-content end -->
+			<!-- address-content start -->
+			<div class="address-content">
+				<div class="address-info">
+					<p>Amanda</p>
+					<p>1365374988</p>
+					<span>Room 305-306,Building 2,No.169 MengZi Rode,Shanghai</span>
+				</div>
+				<div class="address-set clearfix">
+					<div class="f_left">
+						<div class="address-del">
+							<span class="icon_checkbox address-circle"></span>
+							<span class="address-defau">Default address</span>
+						</div>						
+					</div>
+					<div class="f_right">						
+						<a href=""><img src="" alt=""> Edit </a>
+						<img src="images/del.png" alt="" class="Delete"> Delete
+					</div>
+				</div>
+			</div>
+			<!-- address-content end -->
+
+
+
+
 		</div>
+		<!-- address-container end -->
 		<footer class="sc-footer footAdd">
 			<span>Add a new address</span>
 		</footer>
 	</div>
+	<script src="js/fastclick.js"></script>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/content.js"></script>
+	<script>
+		$(function(){
+			$(".address-del").click(function(){
+				if($(".address-circle").hasClass("address-right")){
+        			$(".address-circle").removeClass("address-right");
+        			$(".address-defau").removeClass("address-color");
+    			}else{
+        			$(".address-circle").addClass("address-right");
+        			$(".address-defau").addClass("address-color");
+    			};  						
+			});
+		});
+
+	</script>
 </body>
 </html>

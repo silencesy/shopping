@@ -1021,7 +1021,6 @@ header {
 
 /*-- pay弹出框结束--*/
 
-<<<<<<< HEAD
 /*-- details end --*/
 
 /*logistics页开始*/ 
@@ -1144,15 +1143,17 @@ header {
     margin-right: 0;
 }
 /*-- orders end --*/
-<<<<<<< HEAD
+
 
 /*-- address --*/
 .address-container {
     margin-top: 0.933333rem;
+    margin-bottom: 1.133333rem;
 }
 .address-content {
     background-color: #fff;
     padding: 0.266667rem;
+    border-bottom: 0.2rem solid #E8E8E8;
 }
 .address-info {
     border-bottom: 1px solid #ddd;
@@ -1166,12 +1167,35 @@ header {
     margin-bottom: 0.2rem;
     font-size: 0.32rem;
 }
+.address-set {
+    vertical-align: middle;
+    height: 0.853333rem;
+    line-height: 0.853333rem;
+}
+.address-del {
+    margin-top: 0.08rem;
+}
+.address-circle {
+    vertical-align: middle;
+}
+.address-defau {
+    vertical-align: middle;
+}
+.address-set .f_right {
+    margin-top: 0.133333rem;
+}
+.Delete {
+    margin-left: 0.4rem;
+}
 
-
-
-
-
-
+.address-right {
+    width: 0.455rem;
+    height: 0.455rem;
+    border-radius: 50%;
+    background-position: -0.213333rem 0;    
+}
+.address-color {
+    color: #f6442b;
+}
 /*-- address end --*/
-=======
->>>>>>> 0b99682654f24fd2d02e73fdaf8146bdc5c49aa6
+
