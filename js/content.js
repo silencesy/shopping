@@ -219,6 +219,25 @@ $(function(){
     });
 
 
+    // 修改收货地址页
+    $(".address-del").click(function(){
+            $(this)
+            .find('.address-circle')
+            .addClass("address-right");
+    $(this)
+    .find('.address-circle')
+    .addClass("address-color");
+            $(this)
+            .parents('.address-content')
+            .siblings('.address-content')
+            .find('.address-circle')
+            .removeClass('address-right')
+            .removeClass('address-color');  
+        });
+        $('.address-delete').on('click',function(){
+            $(this).parents('.address-content').remove();
+        });    
+
 
 
 

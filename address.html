@@ -31,7 +31,7 @@
 					</div>
 					<div class="f_right">						
 						<a href=""><img src="" alt=""> Edit </a>
-						<img src="images/del.png" alt="" class="Delete"> Delete
+						<span class="address-delete"><img src="images/del.png" alt="" class="Delete"> Delete</span>
 					</div>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 					</div>
 					<div class="f_right">						
 						<a href=""><img src="" alt=""> Edit </a>
-						<img src="images/del.png" alt="" class="Delete"> Delete
+						<span class="address-delete"><img src="images/del.png" alt="" class="Delete"> Delete</span>
 					</div>
 				</div>
 			</div>
@@ -73,7 +73,7 @@
 					</div>
 					<div class="f_right">						
 						<a href=""><img src="" alt=""> Edit </a>
-						<img src="images/del.png" alt="" class="Delete"> Delete
+						<span class="address-delete"><img src="images/del.png" alt="" class="Delete"> Delete</span>
 					</div>
 				</div>
 			</div>
@@ -94,7 +94,7 @@
 					</div>
 					<div class="f_right">						
 						<a href=""><img src="" alt=""> Edit </a>
-						<img src="images/del.png" alt="" class="Delete"> Delete
+						<span class="address-delete"><img src="images/del.png" alt="" class="Delete"> Delete</span>
 					</div>
 				</div>
 			</div>
@@ -112,19 +112,5 @@
 	<script src="js/fastclick.js"></script>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="js/content.js"></script>
-	<script>
-		$(function(){
-			$(".address-del").click(function(){
-				if($(".address-circle").hasClass("address-right")){
-        			$(".address-circle").removeClass("address-right");
-        			$(".address-defau").removeClass("address-color");
-    			}else{
-        			$(".address-circle").addClass("address-right");
-        			$(".address-defau").addClass("address-color");
-    			};  						
-			});
-		});
-
-	</script>
 </body>
 </html>
