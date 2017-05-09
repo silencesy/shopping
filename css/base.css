@@ -1206,6 +1206,65 @@ header {
 }
 /*-- address end --*/
 
+<<<<<<< HEAD
+/*------Order Confirmation start----*/
+.select-address {
+    margin-top: 0.88rem;
+    background-color: #fff;
+}
+
+.select-address p {
+    padding: 0.266667rem;
+}
+
+.address-product {
+    margin-top: 0.133333rem;
+}
+
+.address-product-quantity {
+    line-height: 0.693333rem;
+    background-color: #fff;
+    margin:0;
+    padding: 0.2rem 0.266667rem;  
+}
+
+.postage-packing {
+    height: 1.093333rem;
+    background-color: #fff;
+    padding: 0.266667rem;
+}
+
+.footer-order {
+    height: 1.066667rem;
+    line-height:  1.066667rem;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-order div {
+    float: left;
+}
+
+.footer-order .total {
+    width: 60%;
+    text-align: right;
+    padding-right: 0.266667rem;
+}
+
+.footer-order .submit {
+    width: 40%;
+    color: #fff;
+    text-align: center;
+    background-color: #f6442b;
+}
+
+
+/*------Order Confirmation end----*/ 
+
+=======
 /*-- Add-address --*/
 .personal-dz {
     width: 100%;
@@ -1273,3 +1332,4 @@ header {
 
 
 /*-- Add-address end --*/
+
