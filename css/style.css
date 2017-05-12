@@ -69,7 +69,11 @@
  height: 0.9rem; 
 }
 .express-area-box article { 
+<<<<<<< HEAD
 	height: 470px; 
+=======
+	height: 450px; 
+>>>>>>> b6ec68a66f2438aba6ea9d31190cc7c9432136fd
 	overflow-y: scroll; 
 }
 .express-area-box header h3 { 
@@ -88,7 +92,11 @@
 .express-area-box { 
 	position: fixed; 
 	left: 0; 
+<<<<<<< HEAD
 	width: 100%;
+=======
+	width: 100%; 
+>>>>>>> b6ec68a66f2438aba6ea9d31190cc7c9432136fd
 	margin-left: 0; 
 }
 
