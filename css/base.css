@@ -1380,3 +1380,27 @@ header {
 
 /*-- Add-address end --*/
 
+/*---------refund开始------------*/
+
+.refund-content {
+    margin-top: 0.933333rem;
+    background-color: #fff;
+}
+
+.refund-content p {
+    font-size: 0.32rem;
+    padding: 0.266667rem;
+}
+
+#refund-textarea {
+    width: 94%;
+    height: 3.2rem;
+    border: 1px solid #ccc;
+    font-size: 0.32rem;
+    margin-left: 3%;
+    border-radius: 0.053333rem;
+    padding: 0.2rem;
+}
+/*---------refund结束------------*/ 
+
+
