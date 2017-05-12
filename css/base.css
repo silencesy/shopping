@@ -285,6 +285,7 @@ header {
 .home-carousel {
     width: 100%;
     height: 5.266667rem;
+    position: relative;
 }
 
 .home-carousel .swiper-container {
@@ -296,6 +297,18 @@ header {
 .home-carousel .swiper-container .swiper-wrapper .swiper-slide img{
     width: 100%;
     height: 100%;
+}
+
+.home-carousel .search-index {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../images/search-index.png) no-repeat;
+    background-size: 0.4rem 0.4rem;
+    z-index: 999;
+
 }
 
 .search_icon {
@@ -349,6 +362,11 @@ header {
     font-size: 0.32rem;
     color: #898989;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .sales-product .sales-product-price {
@@ -373,6 +391,30 @@ header {
     height: 3.12rem;
     width: 100%;
 }
+
+.index-product-list .more-img .img-text1 {
+    position: absolute;
+    width: 4.666667rem;
+    height: 0.533333rem;
+    top: 1.133333rem;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin: auto;
+}
+
+.index-product-list .more-img .img-text2 {
+    position: absolute;
+    width: 2.666667rem;
+    height: 0.533333rem;
+    top: 1.133333rem;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin: auto;    
+}
+ 
+
 
 .index-product-list .more-img .more-btn {
     width: 1.226667rem;
