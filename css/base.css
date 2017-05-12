@@ -466,8 +466,8 @@ header {
     background-color: #fff;
 }
 .container .list-me div {
-    height: 1.333333rem;
-    line-height: 1.333333rem;
+    height: 1rem;
+    line-height: 1rem;
     margin-left: 0.266667rem;
     border-bottom: 2px solid #dcdcdc;
     overflow: hidden;
@@ -579,7 +579,9 @@ header {
 .search-container .search-history {
     margin-bottom: 0.8rem;
 }
-
+.search-listing {
+    margin-top: 0.906667rem;
+}
 .search-content {
     border-bottom: 1px solid #cabcbc;
     background-color: #fff;
@@ -612,8 +614,6 @@ header {
 .search .search-list:last-of-type {
     margin-bottom: 1.2rem;
 }
-
-
 
 /*-- page-search  end --*/
 
@@ -912,25 +912,29 @@ header {
     width: 100%;
     height: 100%;
 }
-.de-add {
+.de-footer .de-add {
     background-color: #f5b12a;
+    width: 33.33%
 }
 .de-add a {
     color: #fff;
     text-decoration: none;
 }
-.de-pay  {
+.de-footer .de-pay  {
     background-color: #f6432c;
+    width: 33.33%
 }
 .de-pay a {
     color: #fff;
     text-decoration: none;
 }
-.de-ear {
+.de-footer .de-ear {
     border-right: 1px solid #ddd;
+    width: 33.33%
 }
 .de-ear img ,.de-heart img {
     vertical-align: middle;
+    width: 17%;
 }
 /*-- pay弹出框开始--*/
 .de-type div .de-active {
@@ -1165,7 +1169,7 @@ header {
 }
 .address-info p {
     margin-bottom: 0.093333rem;
-    font-size: 0.32rem;
+    font-size: 0.333333rem;
 }
 .address-info span {
     display: inline-block;
@@ -1206,7 +1210,6 @@ header {
 }
 /*-- address end --*/
 
-<<<<<<< HEAD
 /*------Order Confirmation start----*/
 .select-address {
     margin-top: 0.88rem;
@@ -1265,8 +1268,10 @@ header {
 
 /*------Order Confirmation end----*/ 
 
-
 /*-- Add-address --*/
+.add-header {
+    height: 0.906667rem;
+}
 .personal-dz {
     width: 100%;
     margin-bottom: 0.2rem;
@@ -1287,7 +1292,7 @@ header {
     padding: 0.266667rem 0;
     width: 100%;
     display: inline-block;
-    font-size: 0.4rem;
+    font-size: 0.333333rem;
 }
 .set-default {
     background-color: #fff;
@@ -1296,7 +1301,8 @@ header {
 .add-del {
     height: 0.933333rem;
     line-height: 0.72rem;
-    margin-left: 0.333333rem;
+    margin-left: 0.25rem;
+    margin-top: 0.08rem;
 }
 .add-info {
     border: none;
@@ -1304,20 +1310,22 @@ header {
 .personal-dz label {
     margin-bottom: 0.2rem;
     display: inline-block;
+    font-size: 0.4rem;
 }
 .add-info .label1 {
-    padding-right: 1.066667rem;
+    padding-right: 1.45rem;
 }
 .add-info .label2 {
-    padding-right: 0.266667rem;
+    padding-right: 0.6rem;
 }
 .personal-dz input {
-    font-size: 0.4rem;
+    0.32rem;
 }
 .add-new {
     position: absolute;
     left: 31%;
-    top: 0.2rem;
+    top: 0.226667rem;
+    font-size: 0.373333rem;
 }
 .add-btn {
     border-width: 0;
@@ -1328,9 +1336,19 @@ header {
     display: inline-block;
     position: absolute;
     right: 0.333333rem;
-    bottom: 0.173333rem;
+    bottom: 0.18rem;
 }
-
+.address-cir {
+    vertical-align: middle;
+}
+.set-default label {
+    font-size: 0.4rem;
+}
+@media screen and (max-width:320px){
+    .add_back {
+        margin-bottom: 0.13rem;
+    }    
+}
 
 /*-- Add-address end --*/
 
